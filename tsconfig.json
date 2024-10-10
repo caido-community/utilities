@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // Enables project references and informs the TypeScript program where to find referenced outputs.
+    "composite": true,
+
+    // Project references rely on the compiled declarations (.d.ts) of external projects.
+    // If declarations do not exist, TypeScript will generate them on demand.
+    "declaration": true,
+
+    // Generate sourcemaps for declarations, so that language server integrations in editors like "Go to" resolve correctly.
+    "declarationMap": true,
+
+    // Enables incremental compilation
+    "incremental": true,
+
+    // If the typechecker fails, avoid generating invalid or partial declarations.
+    "noEmitOnError": true,
+
+    // Avoids eager loading and analyzing all declarations, greatly improving performance.
+    "skipLibCheck": true,
+
+    // Proper ESM support
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "strict": true,
+
+    // Other
+    "jsx": "preserve",
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "noUnusedLocals": true
+  }
+}

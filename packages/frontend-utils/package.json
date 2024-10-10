@@ -8,11 +8,9 @@
   "files": [
     "src/*"
   ],
-  "scripts": {
-    "documentation": "typedoc"
-  },
+  "scripts": {},
   "dependencies": {
-    "@caido/quickjs-types": "^0.9.0",
-    "@caido/sdk-shared": "^0.1.0"
+    "@caido/sdk-frontend": "^0.42.0",
+    "@codemirror/view": "^6.34.0"
   }
 }
