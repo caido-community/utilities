@@ -1,0 +1,31 @@
+name: Publish One
+description: Action to publish one package
+
+inputs:
+  package:
+    description: Package to publish
+    required: true
+
+  secret-npm-token:
+    description: NPM Token
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Publish
+      shell: bash
+      env:
+        NPM_TOKEN: ${{ inputs.secret-npm-token }}
+      run: |
+        # Read the current version from package.json
+        CURRENT_VERSION=$(jq -r '.version' ./packages/${{ inputs.package }}/package.json)
+
+        # Check if the version contains "-beta"
+        if [[ "$CURRENT_VERSION" == *"-beta"* ]]; then
+          echo "Publishing $CURRENT_VERSION as beta tag"
+          pnpm --filter ${{ inputs.package }} -r publish --access public --tag beta
+        else
+          echo "Publishing $CURRENT_VERSION as latest tag"
+          pnpm --filter ${{ inputs.package }} publish --access public
+        fi

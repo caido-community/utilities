@@ -4,13 +4,20 @@
   "description": "Caido Frontend utilities",
   "author": "Caido Community",
   "license": "MIT",
-  "types": "./src/index.d.ts",
+  "main": "dist/primevue.mjs",
+  "types": "dist/types/index.d.ts",
   "files": [
-    "src/*"
+    "dist"
   ],
-  "scripts": {},
+  "scripts": {
+    "prepublish": "pnpm build",
+    "build": "vite build && tsc --emitDeclarationOnly"
+  },
   "dependencies": {
     "@caido/sdk-frontend": "^0.42.0",
     "@codemirror/view": "^6.34.0"
+  },
+  "devDependencies": {
+    "vite": "5.4.8"
   }
 }
