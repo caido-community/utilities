@@ -27,6 +27,7 @@ jobs:
         uses: pnpm/action-setup@v4.0.0
         with:
           version: ${{ env.PNPM_VERSION }}
+          run_install: true
 
       - name: Publish frontend-utils
         uses: ./.github/actions/publish-one
