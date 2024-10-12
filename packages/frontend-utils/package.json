@@ -1,8 +1,9 @@
 {
   "name": "@caido-community/frontend-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Caido Frontend utilities",
   "author": "Caido Community",
+  "homepage": "https://github.com/caido-community/utilities",
   "license": "MIT",
   "main": "dist/primevue.mjs",
   "types": "dist/types/index.d.ts",

@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/2d437a6b-d162-4a21-b6d0-dcccd36c0e7f">
+  <img width="1000" alt="image" src="https://github.com/caido-community/.github/blob/main/content/banner.png?raw=true">
 
   <br />
   <br />
@@ -13,6 +13,8 @@
 </div>
 
 # 🔥 Frontend Utils
+
+[![NPM Version](https://img.shields.io/npm/v/@caido-community/frontend-utils?style=for-the-badge)](https://www.npmjs.com/package/@caido-community/frontend-utils)
 
 This package supplements the [Official SDK](https://www.npmjs.com/package/@caido/sdk-frontend) with Community Contributions. The goals are:
 

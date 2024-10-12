@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/2d437a6b-d162-4a21-b6d0-dcccd36c0e7f">
+  <img width="1000" alt="image" src="https://github.com/caido-community/.github/blob/main/content/banner.png?raw=true">
 
   <br />
   <br />
@@ -15,6 +15,10 @@
 # 🛠️ Utilities
 
 Unofficial repository for Caido plugin utilities.
+
+## Packages
+
+- `@caido-community/frontend-utils`: Frontend utilities
 
 ## 🏅 Goal
 
