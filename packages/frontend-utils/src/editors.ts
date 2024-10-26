@@ -20,7 +20,7 @@ const getSelectedText = (editor?: EditorView) => {
 };
 
 export const getCurrentReplayEditors = () => {
-  if (window.location.hash.split("?")[0] !== "#/replay") {
+  if (window.location.hash.split("?")[0] !== "#/http-history") {
     return {
       requestEditor: undefined,
       responseEditor: undefined,
